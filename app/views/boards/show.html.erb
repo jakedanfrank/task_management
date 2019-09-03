@@ -1,0 +1,9 @@
+<h1>Boards#show</h1>
+
+<h1><%= @board.name %></h1>
+<hr />
+<%= link_to "View lists", board_lists_path(@board) %>
+<br />
+<%= link_to "Edit Board", edit_board_path(@board) %>
+<br />
+<%= link_to "Delete Board", @board, method: :delete %>

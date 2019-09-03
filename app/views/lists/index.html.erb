@@ -1,0 +1,10 @@
+<h1>Lists#index</h1>
+<h1>Choose a List To View Content</h1>
+<%= link_to "Back To Boards", boards_path %>
+<hr/>
+<%= link_to "Create New List", new_board_list_path(@board) %>
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, [@board, list] %></li>
+  <% end %>
+</ul>
